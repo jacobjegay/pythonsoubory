@@ -1,20 +1,15 @@
-cislo = int(input("Zadej cislo?"))
-if(cislo>10 and cislo<12)
-    print = ("to je dobry cislo")
-elif cislo == "11"
-    print("11 je blby cislo")
+skore = []
+for i in range(10):
+    skore = (input("zadej skore (0-60): "))
+    skore.append(skore)
+print("všechny skore jsou", skore)
+print("nejlepší skore je", max(skore))
+print("nejnižší skore je", min(skore))
+print("průměrné skore je", sum(skore)  / 10)
+
+for i in (skore):
+    nad_50 = sum(1 for skore in skore if skore > 50)
+ if nad_50 >= len(skore) / 2:
+       print("výborný výkon!")
 else:
-    print("skvele")
-cislo1 = int(input("zadejte cislo 1"))
-cislo2 = int(input("zadejte cislo 2"))
-cislo3 = int(input("zadejte cislo 3"))
-soucet = cislo1 + cislo2 + cislo3
-print("soucet")
-
-#git příkaz 1:git add
-#git příkaz 2:git push
-#git příkaz 3:git pull
-#git příkaz 4:git clone 
-#git příkaz 5:git commit - m "text"
-
-  #  Lukáš Jiřinec 1B
+    print("můžete to příště zkusit lépe")
